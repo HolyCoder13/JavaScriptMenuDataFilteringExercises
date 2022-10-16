@@ -120,7 +120,7 @@ const menu = [
 
     const butons = btnsCategory.map(function(item){
         return`<button type="button" class="filter-btn" data-id="${item}">${item}</button>`
-    });
+    }).join(" ");
 
     btnContainer.innerHTML=butons;
     // IMPORTANT we need to select btns after they are generated with our function with help of the template string
